@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zameen Clone</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- topNav -->
+    <nav class="navbar navbar-expand-lg  " id="topNav">
+        <div class="d-flex justify-content-between align-items-center">
+
+            <div class="d-flex align-items-center">
+                <span class="icon me-3"><i class="fa-solid fa-house-chimney text-white "></i></span>
+
+                <a class="navbar-brand text-white me-4  " href="index.html">PROPERTIES
+                </a>
+                <i class=" diamond" style="color: #ffffff;"></i>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-1 mb-lg-0">
+
+                    <li class="nav-item"><a class="nav-link active text-white" href="#">PLOT FINDER</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">AREA GUIDES</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">BLOGS</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">MAPS</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">TOOLS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home Loan Calculator</a></li>
+                            <li><a class="dropdown-item" href="#">Area Unit Converter</a></li>
+                            <li><a class="dropdown-item" href="#">Land Record Pages</a></li>
+                            <li><a class="dropdown-item" href="#">Construction Cost Calculator</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">MORE</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Forum</a></li>
+                            <li><a class="dropdown-item" href="#">Index</a></li>
+                            <li><a class="dropdown-item" href="#">Trends</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex input-group search-form ms-lg-3" role="search" style="max-width:160px;">
+                    <input class="form-control inp" id="topSearchTb" type="input" placeholder="Property ID"
+                        aria-label="Search">
+                    <button class="btn btn-custom" type="submit"><i class="fa-solid fa-magnifying-glass"
+                            style="color: black;"></i></button>
+                </form>
+            </div>
+
+            <div class="d-flex align-items-center ms-3">
+                <button class="btn btn-primary text-bg-light p-1" id="addProperty"><strong>+</strong> Add
+                    Property</button>
+                <img src="urdu.png" alt="urdu" style="height:48px;" class="  me-3 mt-2 ms-3">
+                <i class="fa-solid fa-gear text-white fs-5 me-3  " id="png"></i>
+                <i class="fa-regular fa-user text-white fs-5 me-3 " id="png1"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- bottomNav -->
+    <nav class="navbar navbar-expand-lg bg-light nav-2 " id="bottomNav">
+        <div class="d-flex">
+            <a class="navbar-brand" href="#">zameen.com</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto  mb-lg-0">
+                    <div class="d-flex opacity-75 font">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BUY
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">HOMES</a></li>
+                                <li><a class="dropdown-item" href="#">PLOTS</a></li>
+                                <li><a class="dropdown-item" href="#">COMMERCIAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">| &nbsp;&nbsp;&nbsp;&nbsp;RENT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">| &nbsp;&nbsp;&nbsp;&nbsp;AGENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">| &nbsp;&nbsp;&nbsp;&nbsp;NEW PROJECTS</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        <!-- carousel -->
+        <section>
+            <div class="areaimg" style=" background: url('banner.png') no-repeat center center/cover; height: 300px;">
+                <div class="container cont text-center">
+                    <div class="mainhead pt-5">
+                        <h2>Area Unit Converter</h2>
+                        <p style="font-family: sans-serif ;">Easy and convenient way to convert and compare various
+                            units of
+                            measurements of area sizes</p>
+                    </div>
+                    <div class="container mt-5 " id="marla">
+                        <div class="firstrow">
+                            <h6 style="font-size: 11px;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512"
+                                    style=" margin: 0px 8px 4px 0px; margin-inline-end:8px;font-size:1.2rem"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M131.3 231.1L32 330.6l99.3 99.4v-74.6h174.5v-49.7H131.3v-74.6zM480 181.4L380.7 82v74.6H206.2v49.7h174.5v74.6l99.3-99.5z">
+                                    </path>
+                                </svg>MARLA SIZE</h6>
+
+                            <div class="row" style="font-family: sans-serif;">
+                                <div class="col-md-2 sqbt1" id="sqbt">225 /Sq. ft.</div>
+                                <div class="col-md-2" id="sqbt">250 /Sq. ft.</div>
+                                <div class="col-md-2" id="sqbt">272 /Sq. ft.</div>
+                            </div>
+                        </div>
+
+
+                        <!-- dropdown -->
+                        <div class="d-flex griddrop ">
+                            <div class="inp1 d-inline-grid">
+                                <input type="text" class="inp123" id="in123" value="">
+                                <div class="input-group">
+                                    <button class="text-black but1 btn btn-outline-light dropdown-toggle text-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">Marla</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li><a class="dropdown-item " href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <span><i class=" fa-solid fa-equals" style="font-size: 29px; color: #646464;"></i></span>
+
+                            <div class="inp1 d-inline-grid ps-4">
+                                <input type="text" class="inp123" id="in123" value="">
+                                <div class="input-group">
+                                    <button class="text-black but2 btn btn-outline-light dropdown-toggle text-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">Square
+                                        Feet</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="secrow mt-4">
+                            <h6 style="font-size: 11px;"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                    viewBox="0 0 512 512"
+                                    style=" margin: 0px 8px 4px 0px; margin-inline-end:8px;font-size:1.2rem"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M131.3 231.1L32 330.6l99.3 99.4v-74.6h174.5v-49.7H131.3v-74.6zM480 181.4L380.7 82v74.6H206.2v49.7h174.5v74.6l99.3-99.5z">
+                                    </path>
+                                </svg>USEFUL CONVERTER</h6>
+
+                            <div class="row" style="font-family: sans-serif;">
+                                <div class="col-md-2" id="sqbt">272 /Sq. ft.</div>
+                                <div class="col-md-2" id="sqbt">250 /Sq. ft.</div>
+                                <div class="col-md-2" id="sqbt">272 /Sq. ft.</div>
+                            </div>
+                            <div class="row" style="font-family: sans-serif;">
+                                <div class="col-md-2" id="sqbt">225 /Sq. ft.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+      <div class="container">
+        <!-- popular locations -->
+        <div class="row mb-5 " id="para4">
+            <section class="col mt-5" style="font-size: 16px; font-family: sans-serif;">
+                <h4 class="mb-4">Popular Conversions</h4>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4" id="lhr">
+                        <div class="col"><a href="index2.html" target="_self"><i
+                                    class="fa-solid fa-arrow-up-right-from-square" style="color: #057f24;"></i>1 Kanal
+                                to Marla</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>1 Square Yard to Square Feet</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Murabba to Kanal</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Square Meter to Square Feet</a> </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4" id="krch">
+
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Marla to Kanal</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Square Yards to Square Meters</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Murabba to Acre</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Hectare to Kanal</a> </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-4" id="isloo">
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Plots for sale in DHA Defence
+                                (10,103)</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Plots for sale in Raiwind Road
+                                (3,399)</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Plots for sale in Park View City
+                                (2,174)</a> </div>
+                        <div class="col"><a href=""><i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #057f24;"></i>Plots for sale in Bahria Town
+                                (1,787)</a> </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+
+        <!-- Zameen Community -->
+    <div class="container">
+        <section class="tb overflow-auto" id="para5s">
+            <h4 class="mb-4">Area Unit Conversion in Pakistan</h4>
+            <table class="table overflow-auto table-responsive " id="bord">
+                <thead class="thb ">
+                    <tr class="table-success text-center">
+                        <th scope="col " style="padding: 0px 60px 10px; height: 50px; color: #5d5e5d;">Marla</th>
+                        <th scope="col" style="padding: 0px 60px 10px; height: 50px; color: #5d5e5d;">Kanal</th>
+                        <th scope="col" style="padding: 0px 60px 10px; height: 50px; color: #5d5e5d;">Square Feet
+                            (Sq.ft.)</th>
+                        <th scope="col" style="padding: 0px 60px 10px; height: 50px; color: #5d5e5d;">Square Meter
+                            (Sq.m.)</th>
+                        <th scope="col" style="padding: 0px 60px 10px; height: 50px; color: #5d5e5d;">Square Yard
+                            (Sq.yd. / Gazz)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">1 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">2 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">3 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">4 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">5 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">6 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">7 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">8 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">9 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">10 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">11 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">12 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">13 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">14 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">15 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">16 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">17 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">18 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">19 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold " style="font-size: 13px;">20 Marla</td>
+                        <td>0.05 Kanal</td>
+                        <td>225 Sq. ft.</td>
+                        <td>21 Sq. m.</td>
+                        <td>25 Sq. yd.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+       <div class="container">
+         <!-- app expore -->
+         <div class="row pb-4 pt-5" >
+      <section>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ms-4  " >
+              <h4 style="color: #057f24; font-size: 30px;">Get the Zameen App</h4>
+              <span id="buy1" style="font-family: sans-serif; font-weight: 700;">Buy and Rent Property faster and better
+              using our app.</span>
+            </div>
+            
+          </div>
+          <!-- <div class="col-md-6">
+
+          </div> -->
+          <div class="col-md-6 ">
+            <div class="" style="float: right;">
+              <img src="apple.svg" style="width: 9rem;" alt="">
+            <img src="playstore.svg" style="width: 9rem;" alt="">
+            </div>
+            
+            
+              <div class="col">
+                <div class="mt-4 ms-5 d-flex justify-content-end" style="float: right;  ">
+                  
+                    <span id="sizeqr">Scan the QR code to get the app</span>
+                    <img src="arrow.svg" style="padding-right: .3rem;" alt="">
+                    <img src="qrcode.svg" style="width: 5rem;" alt="">
+                  
+                  
+                </div>
+              </div>
+
+            
+
+          </div>
+        </div>
+      </section>
+         </div>
+       </div>
+
+
+         <!-- our faqs  -->
+          <div class="container">
+         <div class="p-4 mb-4 ms-5 me-5" style="background-color: transparent;">
+            <section>
+                <div class="mb-4">
+                    <h5>FAQS<i class="p-2 fa-solid fa-circle-question" style="color: #228000;"></i></h5>
+                </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Faqs #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="ps-5 pe-5 accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            , though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Faqs #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            , though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Faqs #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            , though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         </div>
+         </div>
+
+
+         <div class="container-fluid">
+        <!-- our Partners -->
+        <div class="row pb-5" id="para6">
+            <section class="col">
+                <h5>Our Home Partners</h5>
+                <span class="position-relative" style="right: 2rem; top: 1rem;"><img src="partner.svg" alt=""></span>
+            </section>
+        </div>
+        
+
+       
+
+        <!-- zameen footer -->
+        <div class="row" id="para7">
+      <footer>
+        <div class="row">
+          <div class="col ">
+            <h6 class="fw-semibold ">Company</h6>
+            <div class="fnts ">About us</div>
+            <div class="fnts ">Contact us</div>
+            <div class="fnts ">Jobs</div>
+            <div class="fnts ">Help & Support</div>
+            <div class="fnts ">Advertise on Zameen</div>
+            <div class="fnts ">Terms of Use</div>
+
+          </div>
+          <div class="col">
+            <h6 class="fw-semibold ">Connect</h6>
+            <div class="fnts ">Blog</div>
+            <div class="fnts ">News</div>
+            <div class="fnts ">Forum</div>
+            <div class="fnts ">Expo</div>
+            <div class="fnts ">Real Estate Agents</div>
+            <div class="fnts ">Add Property</div>
+
+          </div>
+          <div class="col ">
+            <h6 class="fw-semibold " >Head Office</h6>
+            <div style="line-height: 25px;">
+              <div class="fnts "><i class="fa-solid fa-location-dot" style="color: #737373;"></i>&nbsp;&nbsp;Pearl One,
+                94-B/I, MM Alam Road,</div>
+              <div class="fnts ">Gulberg III, Lahore, Pakistan</div>
+            </div>
+
+            <div class="pt-3" style="line-height: 25px;">
+              <div class="fnts "><i class="fa-solid fa-phone" style="color: #737373;"></i>&nbsp;&nbsp;0800-ZAMEEN
+                (92633)</div>
+              <div class="fnts ">Monday To Sunday 9AM To 6PM</div>
+            </div>
+
+            <div class=" pt-3 fnts "><i class="fa-solid fa-envelope" style="color: #737373;"></i>&nbsp;&nbsp;Email Us
+            </div>
+
+
+          </div>
+          <div class=" col-3">
+            <h6 class="fw-semibold ">Roshan Digital Account</h6>
+            
+              <div class="ps-1 pt-3 pb-3 d-flex " id="roshan">
+                <span><img src="roshan.svg" class="" id="roshan32" alt=""></span>
+                  <div class="ps-3  d-grid">
+                    <span class="rosh">ROSHAN</span>
+                    <span class="rosh1">DIGITAL</span>
+                    <span class="rosh2">ACCOUNT</span>
+                  </div>
+                
+              </div>
+
+              <div class="col-8">
+                <h6 class="pt-4 pb-2 fw-semibold fs-5">Get Connected</h6>
+                <div class="" >
+                  <span><img class="w-25"  src="fb.svg" alt=""></span>
+                  <span><img class="w-25" src="insta.svg" alt=""></span>
+                  <span><img class="w-25" src="youtube.svg" alt=""></span>
+                  <div>
+                    <span><img class="mt-1 w-25" src="x.svg" alt=""></span>
+                    <span><img class="mt-1 w-25" src="link.svg" alt=""></span>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+          </div>
+
+          <div class="d-flex justify-content-between copyright">
+            <h6 class="opacity-50" style="font-size: 14px;">© Copyright 2007 - 2025 Zameen.com. All Rights Reserved</h6>
+            <a href="#"
+              style="text-decoration: none; color: white; font-size: 13px; font-weight: 600;">TOP&nbsp;&nbsp;<i
+                class="bg-light fa-solid fa-arrow-up" style="color: #000000;"></i></a>
+          </div>
+
+        </div>
+
+
+      </footer>
+        </div>
+        </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
