@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+  <div class="position-relative">
+    <button class="btn btn-primary position-fixed rounded-3 position-absolute"
+      style="background-color: #0ebab1; transform: translate(-45%, 50%) rotate(-90deg); width: max-content;  top: 19rem; border: none; color: black; left: 86.1rem; z-index: 1000;" type="button"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Let's Talk
+      Business</button>
+
+    <div class="offcanvas offcanvas-end h-75 rounded-3" style="width: 35rem; top: 4rem; z-index: 1111;" tabindex="-1" id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header py-0 pt-3 me-2">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body px-0 py-0">
+        <div class="w-100 px-0" style="font-family: montserrat;">
+          <div class="bg-white rounded-3">
+
+            <div class="container pt-4 px-4">
+              <p class="text-black mb-1 fw-semibold">Full name</p>
+              <input class="form-control" type="text" aria-label="default input example">
+            </div>
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">Email <span class="text-danger">*</span></p>
+              <input class="form-control" type="email" aria-label="default input example">
+            </div>
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">Phone number <span class="text-danger">*</span></p>
+
+              <div class="d-flex">
+                <select class="form-select w-50" id="countryCode" name="countryCode">
+
+                  <option value="92">Pakistan (+92)</option>
+                  <option value="44">United Kingdom (+44)</option>
+                  <option value="91">India (+91)</option>
+                  <option value="92">Pakistan (+92)</option>
+
+                </select>
+                <input class="ms-2 form-control" type="tel" id="phoneNumber" name="phoneNumber">
+              </div>
+
+
+            </div>
+
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">Company name <span class="text-danger">*</span></p>
+              <input class="form-control" type="email" aria-label="default input example">
+            </div>
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">Company domain / URL</p>
+              <input class="form-control" type="email" aria-label="default input example">
+            </div>
+
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">Region <span class="text-danger">*</span></p>
+
+              <div class="d-flex">
+                <select class="form-select w-100" id="countryCode" name="countryCode">
+
+                  <option value="92">Please Select</option>
+                  <option value="92">Pakistan</option>
+                  <option value="44">United Kingdom</option>
+                  <option value="91">India</option>
+                  <option value="92">Pakistan</option>
+
+                </select>
+              </div>
+
+
+            </div>
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold pb-2 pt-4">Services you're looking for <span
+                  class="text-danger">*</span>
+              </p>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Remote IT Resources
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Custom Software Development
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Web Development
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Mobile App Development
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  AR/VR
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Gaming
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Cyber Security
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                  Other IT Services
+                </label>
+              </div>
+
+            </div>
+
+
+            <div class="container mt-3 px-4">
+              <p class="text-black mb-1 fw-semibold">I am looking for a job at Devsinc</p>
+
+              <div class="d-flex">
+                <select class="form-select w-100" id="countryCode" name="countryCode">
+
+                  <option value="select">Please Select</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+
+                </select>
+              </div>
+
+
+            </div>
+
+            <div class="container mt-3 pb-4 px-4">
+              <button class="btn text-white fw-bolder rounded-1 ps-4 pe-4" style="background-color: rgb(8, 48, 104);">
+                Submit</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-lg sticky-top bg-black pt-3">
+    <div class="container-fluid">
+
+
+      <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="35" viewBox="0 0 161 187" fill="none"
+        class="insignia-d">
+        <path
+          d="M154.423 55.811C152.332 50.0043 149.781 44.5893 146.761 39.5743C143.918 40.8806 140.758 41.6109 137.422 41.6109C125.09 41.6109 115.095 31.615 115.095 19.2836C115.095 16.2383 115.703 13.3417 116.808 10.695C114.419 9.40918 111.941 8.23118 109.37 7.16921C98.649 2.74252 86.6425 0.523029 73.3583 0.523029H0.526001V186.581H73.3569C86.6425 186.581 98.6954 184.367 109.505 179.935C120.306 175.508 129.478 169.166 137.016 160.93C144.542 152.693 150.343 142.86 154.424 131.428C158.499 119.997 160.535 107.374 160.535 93.5478C160.535 79.7217 158.499 67.1528 154.424 55.8096"
+          fill="#00B5AD" />
+
+        <path
+          d="M152.887 19.9333C152.887 20.1121 152.882 20.2855 152.876 20.4657C152.687 26.4143 149.301 31.559 144.379 34.2276C143.579 34.6699 142.743 35.0384 141.868 35.3387C140.22 35.897 138.457 36.2028 136.619 36.2028C127.638 36.2028 120.351 28.9164 120.351 19.9347C120.351 18.2981 120.593 16.7174 121.046 15.2227C121.309 14.3491 121.647 13.511 122.047 12.7057C124.632 7.49818 129.928 3.87137 136.088 3.67618C136.267 3.67072 136.44 3.66526 136.621 3.66526C145.602 3.66526 152.889 10.9516 152.889 19.9333"
+          fill="#00B5AD" class="insignin-circle" />
+
+      </svg>
+
+
+      <a class="navbar-brand text-white ms-2 " style="font-family: montserrat;" href="#">Devsinc</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="ms-5 me-3">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" value="" id=" checkNativeSwitch" switch />
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ms-5" style="font-size: 11px" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              WHAT WE DO
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-white" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ms-4" style="font-size: 11px" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              WHO WE HELP
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-white" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ms-4" style="font-size: 11px" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              WHO WE ARE
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-white" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ms-4" style="font-size: 11px" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              HOW WE DELIVER
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-white" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white ms-4" style="font-size: 11px" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              JOIN DEVSINC
+            </a>
+            <ul class="dropdown-menu bg-black">
+              <li><a class="dropdown-item text-white" href="#">Action</a></li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Another action</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-white" />
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+
+          <div class="btn rounded-5 ps-3 pe-3 pt-2 pb-2 ms-5 me-3" style="background-color: rgb(1, 199, 199)">
+            <a class="text-white text-decoration-none" style="font-size: 13px">Explore Careers</a>
+          </div>
+
+          <div class="btn rounded-5 ps-3 pe-3 pt-2 pb-2" style="
+                border-color: rgb(1, 199, 199);
+                background-color: rgb(0, 0, 0);
+              ">
+            <a class="text-decoration-none" style="font-size: 13px; color: rgb(1, 199, 199)">Let's Talk Busines</a>
+          </div>
+
+          <ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" style="font-size: 13px" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                GLOBAL
+              </a>
+              <ul class="dropdown-menu bg-black">
+                <li>
+                  <a class="dropdown-item text-white" href="#">Action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Another action</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider text-white" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid px-0">
+    <section>
+      <div class="video-container position-relative">
+        <video height="599px" width="1420px" class="object-fit-cover" loop autoplay>
+
+          <source src="thumbnail.mp4" type="video/mp4" />
+          <source src="thumbnail1.webm" type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="overlay w-100" style="top: 66px; height: 599px; background: rgba(0, 0, 0, 0.5); position: absolute;">
+
+        <div class="container" style="margin-top: 6rem;">
+          <div style="width: 60rem; font-family: Montserrat ;">
+            <h1 class="text-white fw-bold " style="font-size: 45px;">Building at the Speed of AI</h1>
+            <h5 class="text-white fw-normal" style="font-size: 30px;">We help companies across North America, Middle
+              East, Africa and Asia Pacific with technological development</h5>
+          </div>
+
+          <div class="btn rounded-5 mt-5 ps-4 pe-4 pt-3 pb-3" style="background-color: rgb(1, 199, 199)">
+            <a class="text-white text-decoration-none fw-bolder" style="font-size: 20px">Get In Touch</a>
+          </div>
+
+          <div class="mt-5">
+            <h5 class="text-white fs-2">Featured In:</h5>
+
+            <div style="width: 50rem;" class="mt-4">
+              <a href="forbes.png" class="text-decoration-none" target="_blank">
+                <img src="forbes.png" style="margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+              <a href="businessinsider.png" class="text-decoration-none" target="_blank">
+                <img src="businessinsider.png" style="margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+              <a href="newyork.png" class="text-decoration-none" target="_blank">
+                <img src="newyork.png" style="margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+              <a href="masha.png" class="text-decoration-none" target="_blank">
+                <img src="masha.png" class="mt-5" style=" margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+              <a href="khaleej.png" class="text-decoration-none" target="_blank">
+                <img src="khaleej.png" class="mt-5" style="margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+              <a href="6th.png" class="text-decoration-none" target="_blank">
+                <img src="6th.png" class="mt-5" style="margin-right: 8rem; width: 6.7rem;" alt="" srcset="">
+              </a>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+
+  <div class="container-fluid px-0">
+
+    <section>
+      <div class="px-3 overflow-hidden">
+        <div class="mark1" style="width: max-content;">
+
+          <img src="alef.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="algurair.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="indrive.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="intellirent.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="kallidus.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="xquic.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="wether.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="recurate.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="honey.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="nishat.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="tails.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+
+
+          <img src="alef.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="algurair.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="indrive.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="intellirent.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="kallidus.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="xquic.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="wether.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="recurate.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="honey.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="nishat.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="tails.webp" class="moving-img" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+
+        </div>
+
+
+        <div class="mark2" style="width: max-content;">
+
+          <img src="alef.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="algurair.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="indrive.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="intellirent.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="kallidus.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="xquic.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="wether.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="recurate.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="honey.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="nishat.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="tails.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+
+
+
+          <img src="alef.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="algurair.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="indrive.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="intellirent.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="kallidus.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="xquic.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="wether.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="recurate.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="honey.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="nishat.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+          <img src="tails.webp" class="moving-img1" style="margin-right: 4.5rem; width: 6rem;" alt="" srcset="">
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <div class="container-fluid px-0">
+    <section class="bg-black pb-5">
+      <div class="container" id="grad">
+        <h5 class="fw-light opacity-75" style="padding-top: 5rem; font-size: 17px; color: rgb(101, 255, 232);">OUR
+          SERVICES</h5>
+        <h1 class="text-white fw-bold" style="margin-bottom: 4.5rem; font-size: 3rem;">Transform Your Business</h1>
+
+        <div id="Card">
+
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <div class="btn show rounded-5 ps-4 pe-4 pt-3 pb-3" id="cardhover" style="color: rgb(101, 255, 232) ;">
+            <a href="" class="text-decoration-none text-white fw-normal" style="font-size: 18px;">View More Services
+              &nbsp; <i class="fa-solid fa-arrow-down" style="color: #ffffff;"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+  </div>
+
+
+
+
+  <div class="container-fluid px-5 bg-black">
+    <section>
+      <div class="d-flex justify-content-center pt-3" style="padding-bottom: 8rem;">
+        <h1 class="text-white fw-bolder" style="font-size: 3rem;">Discover our Impact Across Industries</h1>
+      </div>
+
+      <div class="links-grid" id="linkHov">
+
+      </div>
+
+      <div class="d-flex justify-content-center" style="margin-top: 7rem;">
+        <a href="" class="btn text-white fw-bold fs-4 mb-3 p-3 px-4 rounded-5"
+          style="background-color: rgb(0, 156, 156);">Let's Talk Business</a>
+      </div>
+
+
+    </section>
+  </div>
+
+  <div class="container-fluid px-0 bg-black">
+    <section class="pt-1 section parallax-section" id="parallaxSection">
+      <div class="col-md-4 container px-5 text-white">
+        <p class="fw-lighter fs-4" style="color: rgb(0, 255, 225);">Featured Insights</p>
+        <div style="width: 30rem;">
+          <p class="fw-semibold fs-1 gradient-text">Stories of our transformations across Services and Industries</p>
+        </div>
+        <p class="fw-light fs-2" style="width: 25rem;">From Concept to Completion</p>
+
+        <div class="mt-3">
+          <a href="" class="btn text-white fw-bold fs-4 mb-3 p-3 px-4 rounded-5"
+            style="background-color: rgb(0, 156, 156);">Explore More</a>
+        </div>
+      </div>
+      <div class="text-white d-flex parallax-container" style="margin-top: 6rem; margin-left: 4rem;">
+
+
+        <div class="" style="margin-right: 6rem;" id="grad1">
+          <div class="row">
+            <div class="col-md-4 animated-div scroll-div" data-speed="0.5" id="section1">
+              <div class="mb-2 me-2">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Case Study</h4>
+
+                    <p style="font-size: 15px;">US Fashion Resale Platform Scales to 100K Monthly Transactions</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card8.avif" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+              <div>
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Blogs</h4>
+
+                    <p style="font-size: 15px;">How Cloud Computing Can Transform Small Businesses</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card1.avif" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+            </div>
+
+            <div class="col-md-4 animated-div scroll-div " id="section1" data-speed="0.8">
+              <div class="mb-2">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Case Study</h4>
+
+                    <p style="font-size: 15px;">US Fashion Resale Platform Scales to 100K Monthly Transactions</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card7.avif" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+              <div class="mb-2">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Blogs</h4>
+
+                    <p style="font-size: 15px;">How Cloud Computing Can Transform Small Businesses</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card6.avif" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+              <div>
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Blogs</h4>
+
+                    <p style="font-size: 15px;">How Cloud Computing Can Transform Small Businesses</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card4.avif" class=" blurimg rounded-4" style="object-fit: cover; width: 13rem; height: 12rem;"
+                  alt="">
+              </div>
+
+
+            </div>
+
+            <div class="col-md-4 animated-div scroll-div" data-speed="0.6" id="section1">
+              <div class="mb-2">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Case Study</h4>
+
+                    <p style="font-size: 15px;">US Fashion Resale Platform Scales to 100K Monthly Transactions</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card2.avif" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+              <div class="mb-2">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Blogs</h4>
+
+                    <p style="font-size: 15px;">How Cloud Computing Can Transform Small Businesses</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card5.webp" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+              <div class="">
+                <div class="position-relative" style="width: 12rem;">
+                  <div class="container mt-3 position-absolute" id="divhov1">
+
+                    <h4 style="font-size: 20px;">Blogs</h4>
+
+                    <p style="font-size: 15px;">How Cloud Computing Can Transform Small Businesses</p>
+
+
+                    <div class="mt-1 icon-link icon-link-hover bi12 " id="expbtn">
+                      <a href="" class="btn text-white fw-bold fs-6 mb-1 rounded-5"
+                        style="background-color: rgb(0, 156, 156);">Explore More <span class="fw-bold fs-4">></span></a>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+
+                <img src="card3.webp" class=" blurimg rounded-4" style="width: 13rem; height: 12rem;" alt="">
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+  </div>
+
+
+  <div class="container-fluid px-0">
+    <section class="bg-black" style="padding-top: 10rem;">
+      <div class="row">
+        <div class="col-md-6 px-5 text-white">
+          <p class="fw-lighter fs-4" style="color: rgb(0, 255, 225);">Pioneering Trust and Innovation</p>
+          <div style="width: 30rem;">
+            <p class="fw-semibold fw-bold" style="font-size: 38px;">Devsinc’s Achievements</p>
+          </div>
+          <p class="fw-light fs-6" style="width: 40rem;">We take pride in empowering businesses worldwide with
+            innovative solutions.</p>
+          <p class="fw-light fs-6" style="width: 36rem;">Devinc's bring an unwavering commitment to excellence, backed
+            by a global presence.</p>
+
+          <div class="mt-4">
+            <a href="" class="btn text-white fw-bold fs-4 mb-3 p-3 px-4 rounded-5"
+              style="background-color: rgb(0, 156, 156);">Get In Touch</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="row">
+
+            <div class="col-md-6">
+              <h2 class="fw-bold" style="font-size: 50px; color: rgb(0, 184, 184);">3,000+</h2>
+              <p class="text-white fs-4">Successful Projects</p>
+              <h2 class="fw-bold" style="font-size: 50px; color: rgb(0, 184, 184);">250+</h2>
+              <p class="text-white fs-4">Active Clients</p>
+            </div>
+
+            <div class="col-md-6">
+              <h2 class="fw-bold" style="font-size: 50px; color: rgb(0, 184, 184);">23+</h2>
+              <p class="text-white fs-4">Countries Supported</p>
+              <h2 class="fw-bold" style="font-size: 50px; color: rgb(0, 184, 184);">15+</h2>
+              <p class="text-white fs-4">Years of Enablement Experience</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container-fluid px-0 bg-black">
+    <div class="video-section bg-black" id="videoSection">
+
+      <div class="sticky-container">
+        <div class="video-wrapper" id="videoWrapper">
+          <video class="w-100" autoplay loop>
+            <source src="2.mp4" type="video/mp4">
+            <source src="2.webm" type="video/webm">
+          </video>
+        </div>
+
+        <div class="content-wrapper bg-black" id="contentWrapper">
+          <div class="content-label">CAREERS</div>
+          <h2 class="content-title" style="font-size: 47px;">Human-first is our foundation.</h2>
+          <p class="content-description text-white fs-4">Join a culture that celebrates excellence and diversity,
+            Globally!</p>
+          <button class="join-button">Join Us</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid px-0 bg-black" style="padding-top: 1rem;">
+    <div class="leadership-section">
+      <div class="position-relative mt-5">
+        <h1 class="section-title text-white" style="margin-left: 5rem;">Our Global Leadership</h1>
+        <div class="carousel-controls" style="margin-top: 1rem;">
+          <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div id="leadershipCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner text-white">
+          <div class="carousel-item active" style="margin-left: 23rem;">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="cofounder.webp" alt=""></div>
+                  <h3 class="leader-name">Numan <span class="highlight">Ijaz</span></h3>
+                  <p class="leader-title">Founder, CEO</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="HR.avif" alt=""></div>
+                  <h3 class="leader-name">Usman <span class="highlight">Asif</span></h3>
+                  <p class="leader-title">Co-Founder</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="TeamManager.avif" alt=""></div>
+                  <h3 class="leader-name">Rehmat <span class="highlight">Qadir</span></h3>
+                  <p class="leader-title">Sr. VP of Sales Engineering</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="Projectmanager.webp" alt=""></div>
+                  <h3 class="leader-name">Umar <span class="highlight">Farooq</span></h3>
+                  <p class="leader-title">Sr. VP E-Commerce & Digital Retail</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="margin-left: 23rem;">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="HR.avif" alt=""></div>
+                  <h3 class="leader-name">Sarah <span class="highlight">Johnson</span></h3>
+                  <p class="leader-title">Chief Technology Officer</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="Leadmanager.avif" alt=""></div>
+                  <h3 class="leader-name">Michael <span class="highlight">Chen</span></h3>
+                  <p class="leader-title">VP of Product Development</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="Projectmanager.webp" alt=""></div>
+                  <h3 class="leader-name">Emily <span class="highlight">Williams</span></h3>
+                  <p class="leader-title">Chief Financial Officer</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="leader-card">
+                  <div class="leader-image"><img class="w-100" src="cofounder.webp" alt=""></div>
+                  <h3 class="leader-name">David <span class="highlight">Martinez</span></h3>
+                  <p class="leader-title">Head of Operations</p>
+                  <a href="#" class="social-icon"><i style="padding: .7rem;" class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid px-0 text-white bg-black pt-5">
+    <section class="px-5 " id="grad2">
+
+      <div class="row">
+
+
+        <div class="col-md-6">
+
+          <h1 class="fw-bold gradient-text" style="font-size: 49px;">Ready To Get Started</h1>
+          <p class="fs-4 mt-4" style="width: 31rem;">Connect with us to explore how we can deliver exceptional IT
+            solutions for your needs.</p>
+
+          <div class="w-100 mt-5">
+            <div class="bg-white rounded-3">
+
+              <div class="container pt-4 px-4">
+                <p class="text-black mb-1 fw-semibold">Full name</p>
+                <input class="form-control" type="text" aria-label="default input example">
+              </div>
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">Email <span class="text-danger">*</span></p>
+                <input class="form-control" type="email" aria-label="default input example">
+              </div>
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">Phone number <span class="text-danger">*</span></p>
+
+                <div class="d-flex">
+                  <select class="form-select w-50" id="countryCode" name="countryCode">
+
+                    <option value="92">Pakistan (+92)</option>
+                    <option value="44">United Kingdom (+44)</option>
+                    <option value="91">India (+91)</option>
+                    <option value="92">Pakistan (+92)</option>
+
+                  </select>
+                  <input class="ms-2 form-control" type="tel" id="phoneNumber" name="phoneNumber">
+                </div>
+
+
+              </div>
+
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">Company name <span class="text-danger">*</span></p>
+                <input class="form-control" type="email" aria-label="default input example">
+              </div>
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">Company domain / URL</p>
+                <input class="form-control" type="email" aria-label="default input example">
+              </div>
+
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">Region <span class="text-danger">*</span></p>
+
+                <div class="d-flex">
+                  <select class="form-select w-100" id="countryCode" name="countryCode">
+
+                    <option value="92">Please Select</option>
+                    <option value="92">Pakistan</option>
+                    <option value="44">United Kingdom</option>
+                    <option value="91">India</option>
+                    <option value="92">Pakistan</option>
+
+                  </select>
+                </div>
+
+
+              </div>
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold pb-2 pt-4">Services you're looking for <span
+                    class="text-danger">*</span>
+                </p>
+
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Remote IT Resources
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Custom Software Development
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Web Development
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Mobile App Development
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    AR/VR
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Gaming
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Cyber Security
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" style="cursor: pointer;" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label text-black" style="font-size: 14px;" for="defaultCheck1">
+                    Other IT Services
+                  </label>
+                </div>
+
+              </div>
+
+
+              <div class="container mt-3 px-4">
+                <p class="text-black mb-1 fw-semibold">I am looking for a job at Devsinc</p>
+
+                <div class="d-flex">
+                  <select class="form-select w-100" id="countryCode" name="countryCode">
+
+                    <option value="select">Please Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
+                  </select>
+                </div>
+
+
+              </div>
+
+              <div class="container mt-3 pb-4 px-4">
+                <button class="btn text-white fw-bolder rounded-1 ps-4 pe-4" style="background-color: rgb(8, 48, 104);">
+                  Submit</button>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+        <div class="col-md-6">
+          <div class="cta-deco-code w-embed w-25" style="margin-left: 20rem;">
+            <svg width="342" height="363" viewBox="0 0 342 363" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 2C63.9333 3.00466 122.772 20.88 173.195 51.3231C170.579 54.7541 168.323 58.4694 166.352 62.3933C164.665 65.919 163.167 69.6344 162.03 73.3497C160.039 79.9843 159.016 86.8463 159.016 93.822C159.016 132.738 190.653 164.414 229.626 164.414C229.626 164.414 245.037 163.162 252.43 160.641C256.259 159.314 259.975 157.665 263.292 155.846C268.012 153.268 272.353 150.197 276.277 146.709C316.634 203.197 340.347 272.348 340.347 347.072V362.9"
+                stroke="url(#paint0_linear_270_22)" stroke-width="3.07084" stroke-miterlimit="10"></path>
+              <path
+                d="M283.101 93.8029C283.101 94.3906 283.101 94.9592 283.063 95.5469C282.437 115.109 271.31 132.018 255.122 140.794C252.487 142.254 249.738 143.467 246.857 144.453C241.436 146.292 235.635 147.296 229.607 147.296C200.074 147.296 176.114 123.336 176.114 93.8029C176.114 93.8029 176.91 83.2256 178.408 78.316C179.28 75.4347 180.379 72.6861 181.706 70.0323C190.198 52.9152 207.618 40.992 227.863 40.3475C228.451 40.3475 229.02 40.3096 229.607 40.3096C259.14 40.3096 283.101 64.2697 283.101 93.8029Z"
+                stroke="currentcolor" stroke-width="3.07084" stroke-miterlimit="10"></path>
+              <defs>
+                <linearGradient id="paint0_linear_270_22" x1="8.5" y1="7" x2="356" y2="363"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#16BBBA" stop-opacity="0"></stop>
+                  <stop offset="0.47" stop-color="#16BBBA"></stop>
+                  <stop offset="0.93" stop-color="#16BBBA" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="ms-5">
+            <div class="d-flex ">
+              <img style="width: 4rem; margin-right: 2rem;" src="world.svg" alt="">
+
+              <p class="fw-semibold fw-bold gradient-text" style="font-size: 45px;">Global Presence</p>
+            </div>
+            <p class="fw-light fs-4" style="margin-left: 6.5rem; width: 30rem;">We're across 5 continents, explore our
+              office nearest to
+              you.
+            </p>
+
+            <div class="mt-4" style="margin-left: 6.5rem;">
+              <a href="" class="btn text-white fw-bold fs-4 mb-3 p-3 px-4 rounded-5"
+                style="background-color: rgb(0, 156, 156);">Learn More</a>
+            </div>
+          </div>
+
+
+          <div class="ms-5 mt-5">
+            <div class="d-flex ">
+              <img style="width: 4rem; margin-right: 2rem;" src="people.svg" alt="">
+
+              <p class="fw-semibold fw-bold gradient-text" style="font-size: 45px;">Global Leaders</p>
+            </div>
+            <p class="fw-light fs-4" style="margin-left: 6.5rem; width: 30rem;">Our capability and competencies are
+              backed by diverse Global leadership.</p>
+
+            <div class="mt-4" style="margin-left: 6.5rem;">
+              <a href="" class="btn text-white fw-bold fs-4 mb-3 p-3 px-4 rounded-5"
+                style="background-color: rgb(0, 156, 156);">Learn More</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- <div class="container-fluid bg-black " style="margin-top: 7rem; padding-bottom: 4rem;"> -->
+      <div class="row " style="margin-top: 7rem;">
+
+        <div class="col-md-2">
+          <div>
+            <svg style="cursor: pointer; position: relative; bottom: 10px;" xmlns="http://www.w3.org/2000/svg"
+              width="35" viewBox="0 0 161 187" fill="none" class="insignia-d">
+              <path
+                d="M154.423 55.811C152.332 50.0043 149.781 44.5893 146.761 39.5743C143.918 40.8806 140.758 41.6109 137.422 41.6109C125.09 41.6109 115.095 31.615 115.095 19.2836C115.095 16.2383 115.703 13.3417 116.808 10.695C114.419 9.40918 111.941 8.23118 109.37 7.16921C98.649 2.74252 86.6425 0.523029 73.3583 0.523029H0.526001V186.581H73.3569C86.6425 186.581 98.6954 184.367 109.505 179.935C120.306 175.508 129.478 169.166 137.016 160.93C144.542 152.693 150.343 142.86 154.424 131.428C158.499 119.997 160.535 107.374 160.535 93.5478C160.535 79.7217 158.499 67.1528 154.424 55.8096"
+                fill="#00B5AD" />
+
+              <path
+                d="M152.887 19.9333C152.887 20.1121 152.882 20.2855 152.876 20.4657C152.687 26.4143 149.301 31.559 144.379 34.2276C143.579 34.6699 142.743 35.0384 141.868 35.3387C140.22 35.897 138.457 36.2028 136.619 36.2028C127.638 36.2028 120.351 28.9164 120.351 19.9347C120.351 18.2981 120.593 16.7174 121.046 15.2227C121.309 14.3491 121.647 13.511 122.047 12.7057C124.632 7.49818 129.928 3.87137 136.088 3.67618C136.267 3.67072 136.44 3.66526 136.621 3.66526C145.602 3.66526 152.889 10.9516 152.889 19.9333"
+                fill="#00B5AD" class="insignin-circle" />
+
+            </svg>
+            <a href="" style="font-family: montserrat; font-weight: bold;"
+              class="text-decoration-none text-white fs-2">Devsinc</a>
+          </div>
+        </div>
+        <div class="col-md-5">
+
+          <div class="d-flex">
+            <div class="dropdown-center" style="margin-left: 10rem;">
+              <button style="border: none; background-color: transparent; font-size: 14px; font-weight: 500;"
+                class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-display="static">
+                Company
+              </button>
+              <ul class="dropdown-menu mt-2 dropdown-animate">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown-center" style="margin-left: 6rem;">
+              <button style="border: none; background-color: transparent; font-size: 14px; font-weight: 500;"
+                class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-display="static">
+                Industries We Serve
+              </button>
+              <ul class="dropdown-menu mt-2 dropdown-animate" style="width: max-content;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <li><a class="dropdown-item" href="#">Travel & Hospitality</a></li>
+                    <li><a class="dropdown-item" href="#">Telecommunication</a></li>
+                    <li><a class="dropdown-item" href="#">Oil, Gas, and Energy</a></li>
+                    <li><a class="dropdown-item" href="#">E-commerce</a></li>
+                    <li><a class="dropdown-item" href="#">Healthcare & Pharmaceuticals</a></li>
+                  </div>
+                  <div class="col-md-6">
+                    <li><a class="dropdown-item" href="#">Public Sector</a></li>
+                    <li><a class="dropdown-item" href="#">Retail & CPG</a></li>
+                    <li><a class="dropdown-item" href="#">Startups</a></li>
+                    <li><a class="dropdown-item" href="#">Banking & Fintech</a></li>
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                  </div>
+                </div>
+
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="d-flex">
+            <div class="dropdown-center" style="margin-left: 4rem;">
+              <button style="border: none; background-color: transparent; font-size: 14px; font-weight: 500;"
+                class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-display="static">
+                Services and Solutions
+              </button>
+              <ul class="dropdown-menu mt-2 dropdown-animate" style="width: max-content;">
+                <div class="row">
+                  <div class="col-md-6">
+                    <li><a class="dropdown-item" href="#">Travel & Hospitality</a></li>
+                    <li><a class="dropdown-item" href="#">Telecommunication</a></li>
+                    <li><a class="dropdown-item" href="#">Oil, Gas, and Energy</a></li>
+                    <li><a class="dropdown-item" href="#">E-commerce</a></li>
+                    <li><a class="dropdown-item" href="#">Healthcare & Pharmaceuticals</a></li>
+                  </div>
+                  <div class="col-md-6">
+                    <li><a class="dropdown-item" href="#">Public Sector</a></li>
+                    <li><a class="dropdown-item" href="#">Retail & CPG</a></li>
+                    <li><a class="dropdown-item" href="#">Startups</a></li>
+                    <li><a class="dropdown-item" href="#">Banking & Fintech</a></li>
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                  </div>
+                </div>
+
+              </ul>
+            </div>
+
+            <div class="dropdown dropdown-center" style="margin-left: 5rem;">
+              <button style="border: none; background-color: transparent; font-size: 14px; font-weight: 500;"
+                class="btn text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-display="static">
+                Resources
+              </button>
+
+              <ul class="dropdown-menu mt-2 dropdown-animate">
+                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                <li><a class="dropdown-item" href="#">Case Studies</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-md-4">
+
+          <div class="d-flex">
+            <h4 class="fw-bold fs-5">Pakistan</h4>
+            <p class="mt-1" style=" font-size: 13px;">(Global Delivery Center)</p>
+            <span class="ms-2"><img class="w-75" src="pk.webp" alt=""></span>
+          </div>
+          <div style="width: 12rem;">
+            <p style="font-size: 15px;">Plot B, 281 Ghazi Rd, Khuda Buksh Colony KB Society, Lahore, Punjab</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="d-flex">
+            <h4 class="fw-bold fs-5">USA</h4>
+            <p class="mt-1" style=" font-size: 13px;">(Regional Office)</p>
+            <span class="ms-2"><img class="w-75" src="usa.webp" alt=""></span>
+          </div>
+          <div style="width: 12rem;">
+            <p style="font-size: 15px;">18 S 2nd Street #120 San Jose, CA, 95113, United States</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="d-flex">
+            <h4 class="fw-bold fs-5">UAE</h4>
+            <p class="mt-1" style=" font-size: 13px;">(Regional Office)</p>
+            <span class="ms-2"><img style="width: 3rem;" src="dubai.webp" alt=""></span>
+          </div>
+          <div style="width: 12rem;">
+            <p style="font-size: 15px;">Concord Tower, Dubai Internet City, 9th floor, Black Sea Business Center</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="row mt-2">
+
+        <div class="col-md-4">
+
+          <div class="d-flex">
+            <h4 class="fw-bold fs-5">UK</h4>
+            <p class="mt-1" style=" font-size: 13px;">(Regional Office)</p>
+            <span class="ms-2"><img style="width: 3rem;" src="uk.webp" alt=""></span>
+          </div>
+          <div style="width: 12rem;">
+            <p style="font-size: 15px;">128 City Road London EC1V 2NX, United Kingdom</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+          <div class="d-flex">
+            <h4 class="fw-bold fs-5">KSA</h4>
+            <p class="mt-1" style=" font-size: 13px;">(Regional Office)</p>
+            <span class="ms-2"><img style="width: 2.5rem;" src="saudia.webp" alt=""></span>
+          </div>
+          <div style="width: 13rem;">
+            <p style="font-size: 15px;">18 S 2nd Street #120 San Jose, CA, 95113, United States</p>
+          </div>
+
+        </div>
+        <div class="col-md-4">
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="mt-4">
+        <a href="#" class="text-decoration-none text-white fw-bold fs-5">global.business@devsinc.com</a>
+      </div>
+
+      <div class="mt-5 row pb-5">
+
+        <div class="col-md-6">
+          <a href="" class="text-decoration-none text-white">Terms and Conditions</a>
+          <a href="" class="ms-4 text-decoration-none text-white">Privacy Policy</a>
+        </div>
+
+        <div class="col-md-6">
+          <div class="d-flex justify-content-end">
+            <a href=""><i class="fs-3 fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fs-3 fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fs-3 fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a href=""><i class="fs-3 fa-brands fa-x-twitter" style="color: #ffffff;"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- </div> -->
+
+
+
+    </section>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="file.js"></script>
+</body>
+
+</html>
